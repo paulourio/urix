@@ -1,0 +1,24 @@
+PROJECT("URIX Kernel")
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+
+MESSAGE(STATUS "")
+MESSAGE(STATUS "--- URIX, Experimental Cthulhu Operating System Kernel (ECOSK) ---")
+MESSAGE(STATUS "")
+
+SET(URIX_WEBSITE		"https://github.com/jimmyskull/urix")
+SET(URIX_MAIL_BUGREPORT		"paulourio@gmail.com")
+SET(URIX_WEBSITE_NEW_BUGREPORT	"https://github.com/jimmyskull/urix/issues/new")
+
+SET(URIX_VERSION_MAIN	"3")
+SET(URIX_VERSION_RC	"-rc2")
+SET(URIX_VERSION_NAME	"Euler")
+
+IF (NOT CMAKE_BUILD_TYPE)
+	SET(CMAKE_BUILD_TYPE "debug")
+ENDIF()
+
+MESSAGE(STATUS "Version: ${URIX_VERSION_MAIN}${URIX_VERSION_RC} (${URIX_VERSION_NAME})")
+MESSAGE(STATUS "System : ${CMAKE_SYSTEM} (${CMAKE_SYSTEM_PROCESSOR})")
+
+ADD_SUBDIRECTORY(urix)
+
