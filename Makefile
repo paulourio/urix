@@ -8,9 +8,14 @@ all:
 	cd src && cmake .
 	make -C src all
 
+documentation:
+	doxygen doc/Doxyfile
+
 clean:
 	find -type d -name CMakeFiles -exec $(RM) -R '{}' \; -prune
 	find -type f -name CMakeCache.txt -exec $(RM) '{}' \; 
 	find -mindepth 2 -type f -name Makefile -exec $(RM) '{}' \;
 	find -mindepth 2 -type f -name cmake_install.cmake -exec $(RM) '{}' \;
+	$(RM) -R doc/html
+	$(RM) -R doc/latex
 
