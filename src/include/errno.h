@@ -26,19 +26,19 @@
  * specified by the given process ID. */
 #define	ESRCH		 3
 /** Interrupted function call (POSIX.1).  An asynchronous signal was caught by
- * the process during the execution of an interruptible function. If the signal
+ * the process during the execution of an interruptible function.  If the signal
  * handler performs a normal return, the interrupted function call may return
  * this condition (see the Base Definitions volume of IEEE Std 1003.1-2001,
  * signal.h). */
 #define	EINTR		 4
 /** Input/output error (POSIX.1).  Some physical input or output error has
- * occurred. This error may be reported on a subsequent operation on the same
- * file descriptor. Any other error-causing operation on the same file
+ * occurred.  This error may be reported on a subsequent operation on the same
+ * file descriptor.  Any other error-causing operation on the same file
  * descriptor may cause the [EIO] error indication to be lost. */
 #define	EIO		 5
 /** No such device or address (POSIX.1).  Input or output on a special file
  * refers to a device that does not exist, or makes a request beyond the
- * capabilities of the device. It may also occur when, for example, a tape
+ * capabilities of the device.  It may also occur when, for example, a tape
  * drive is not on-line. */
 #define	ENXIO		 6
 /** Argument list too long (POSIX.1).  The sum of the number of bytes used by

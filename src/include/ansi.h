@@ -18,8 +18,8 @@
 #define _URIX_ANSI_H_
 
 #if __STDC__ == 1 || __GNUC__
-#undef _POSIX_SOURCE
-#define _POSIX_SOURCE 199309L
+#	undef _POSIX_SOURCE
+#	define _POSIX_SOURCE 199309L
 #endif
 
 /** Generic pointer */
