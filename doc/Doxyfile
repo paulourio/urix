@@ -7,10 +7,10 @@
 #---------------------------------------------------------------------------
 
 DOXYFILE_ENCODING      = UTF-8
-PROJECT_NAME           = URIX
+PROJECT_NAME           = 
 PROJECT_NUMBER         =
 PROJECT_BRIEF          =
-PROJECT_LOGO           = logo.png
+PROJECT_LOGO           = doc/logo.png
 OUTPUT_DIRECTORY       = doc
 CREATE_SUBDIRS         = NO
 OUTPUT_LANGUAGE        = English
@@ -92,16 +92,16 @@ WARNINGS               = YES
 WARN_IF_UNDOCUMENTED   = YES
 WARN_IF_DOC_ERROR      = YES
 WARN_NO_PARAMDOC       = NO
-WARN_FORMAT            = "\033[1m$file:$line:\033[0m $text"
+WARN_FORMAT            = "$file:$line: $text"
 WARN_LOGFILE           =
 
 #---------------------------------------------------------------------------
 # configuration options related to the input files
 #---------------------------------------------------------------------------
 
-INPUT                  = src
+INPUT                  = src doc
 INPUT_ENCODING         = UTF-8
-FILE_PATTERNS          = *.c, *.h, *.s
+FILE_PATTERNS          = *.c *.h *.s
 RECURSIVE              = YES
 EXCLUDE                =
 EXCLUDE_SYMLINKS       = NO
