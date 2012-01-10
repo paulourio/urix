@@ -19,18 +19,8 @@
 
 #if __STDC__ == 1 || __GNUC__
 #	undef _POSIX_SOURCE
-#	define _POSIX_SOURCE 199309L
+#	undef _POSIX_C_SOURCE
+#	define _POSIX_C_SOURCE 199309L
 #endif
-
-/** Generic pointer */
-#define	_VOIDSTAR	void *
-/** Void type */
-#define	_VOID		void
-/** Const keyword (not present on K&R compiler) */
-#define	_CONST		const
-/** Volatile keyword (not present on K&R compiler) */
-#define	_VOLATILE	volatile
-/** Size_t type (On K&R compiler, int type is used) */
-#define _SIZET		size_t
 
 #endif /* _URIX_ANSI_H_ */
