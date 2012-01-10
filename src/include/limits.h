@@ -12,6 +12,7 @@
 /* These are only visible for POSIX */
 #if defined(_POSIX_C_SOURCE) || defined(_POSIX_SOURCE)
 
+/** Tells which POSIX version is supported on the system */
 #define _POSIX_VERSION 199309L
 
 /*
@@ -38,8 +39,6 @@
 #define _POSIX_TIMER_MAX	32
 /** Number of times a timer can overrun */
 #define _POSIX_DELAYTIMER_MAX	32
-
-
 
 /** The total length of the string arguments you pass to one of
  * the exec functions. */
@@ -110,7 +109,6 @@
 
 #endif /* _POSIX_SOURCE */
 
-
 /*
  * Table 2-4: POSIX Feature Limits: Maxima
  */
@@ -143,9 +141,6 @@
 /** Clocks and timers.  Maximum number of times a timer can overrun and you
  * can still detect it. */
 #define DELAYTIMER_MAX		32
-
-
-
 
 /** Number of files a process may have open */
 #define OPEN_FILES_MAX	   255
