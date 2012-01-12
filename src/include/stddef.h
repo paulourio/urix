@@ -1,7 +1,6 @@
 /**
  * \file stddef.h
  * \brief Standard type definitions.
- * \details It is defined by the POSIX.1 standard.
  * \author Paulo Urio
  * \date 2012
  * \copyright FreeBSD License
