@@ -108,9 +108,6 @@
 /* These are only visible for POSIX */
 #if defined(_POSIX_C_SOURCE) || defined(_POSIX_SOURCE)
 
-/** Tells which POSIX version is supported on the system */
-#define _POSIX_VERSION 199309L
-
 /*
  *	Table 2-5: POSIX Feature Limits: Minimum Requirements
  */
