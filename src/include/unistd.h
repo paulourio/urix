@@ -17,13 +17,9 @@
 #ifndef _UNISTD_H_
 #define _UNISTD_H_
 
-/** NULL must be defined on unistd.h according to POSIX Section 2.7.1. */
-#undef NULL
-#if defined(__cplusplus)
-#	define NULL	0
-#else
-#	define NULL	((void *) 0)
-#endif
+/* Note: NULL must be defined on unistd.h according to POSIX Section 2.7.1.
+ * Also, it says it must be defined on stddef.h.
+ */
 
 /* Values used by access().  POSIX Table 2-8. */
 /** File existence */
