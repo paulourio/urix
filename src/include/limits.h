@@ -12,7 +12,9 @@
 #ifndef _URIX_LIMITS_H_
 #define _URIX_LIMITS_H_
 
-/* Copied from linux/kernel.h */
+/** \subpage ActualLimits limits.h: Actual limits
+ *  Copied from linux/kernel.h
+ * @{ */
 
 /** Unsigned short maximum value */
 #define USHRT_MAX	((u16)(~0U))
@@ -104,12 +106,14 @@
  * can still detect it. */
 #define DELAYTIMER_MAX		32
 
+/** @} */
 
 /* These are only visible for POSIX */
 #if defined(_POSIX_C_SOURCE) || defined(_POSIX_SOURCE)
 
-/*
- *	Table 2-5: POSIX Feature Limits: Minimum Requirements
+/** \subpage PosixLimits POSIX Minimum limits
+ *  Table 2-5: POSIX Feature Limits: Minimum Requirements
+ *  @{
  */
 
 /** Number of operations in one listio */
@@ -200,6 +204,7 @@
 /** The maximum value a semaphore may have. */
 #define _POSIX_SEM_VALUE_MAX	32767
 
+/** @} */
 #endif /* _POSIX_SOURCE */
 
 #endif /* _URIX_LIMITS_H_ */
