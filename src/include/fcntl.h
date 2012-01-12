@@ -1,5 +1,6 @@
 /**
  * @file fcntl.h
+ * @page fcntl
  * @brief File control options (POSIX 1003.4 synchronized I/O).
  * @details Define the requests and arguments for use by the
  * 	functions fcntl() and open().  Reserved namespaces: beginning with
@@ -39,9 +40,9 @@
 
 /** @subpage fcntl Values for l_type
  * Used for record locking with fcntl() (the following
- * values are unique) are as follows.  POSIX Table 6-3. */
-/** Shared or read lock
+ * values are unique) are as follows.  POSIX Table 6-3.
  * @{ */
+/** Shared or read lock */
 #define F_RDLCK		1
 /** Unlock */
 #define F_UNLCK		2

@@ -81,6 +81,7 @@
 /** Background process attempting write.  Default Action: S */
 #define SIGTTOU		23
 
+/** Type of a signal handling function */
 typedef void (*__sighandler_t)(int);
 
 /* Macros used as function pointers. */

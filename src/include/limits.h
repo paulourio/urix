@@ -1,5 +1,6 @@
 /**
  * @file limits.h
+ * @page limits
  * @brief Defines some values for a few URIX constants.
  * @author Paulo Urio
  * @date 2012
@@ -12,7 +13,7 @@
 #ifndef _URIX_LIMITS_H_
 #define _URIX_LIMITS_H_
 
-/** @subpage ActualLimits limits.h: Actual limits
+/** @subpage limits limits.h: Actual limits
  *  Copied from linux/kernel.h
  * @{ */
 
@@ -111,7 +112,7 @@
 /* These are only visible for POSIX */
 #if defined(_POSIX_C_SOURCE) || defined(_POSIX_SOURCE)
 
-/** @subpage PosixLimits POSIX Minimum limits
+/** @subpage limits POSIX Minimum limits
  *  Table 2-5: POSIX Feature Limits: Minimum Requirements
  *  @{
  */

@@ -9,6 +9,7 @@
 #ifndef _STDDEF_H_
 #define _STDDEF_H_
 
+/** Null pointer constant */
 #undef NULL
 #if defined(__cplusplus)
 #	define NULL	0
@@ -28,6 +29,10 @@ typedef char wchar_t;
 /** Unsigned integral type of the result of the sizeof operator. */
 typedef unsigned int size_t;
 
+/** Integer constant expression of type size_t, the value of which is the
+ * offset in bytes to the structure member (member-designator), from the
+ * beginning of its structure (type).
+ */
 #undef offsetof
 #ifdef __compiler_offsetof
 #	define offsetof(TYPE,MEMBER) __compiler_offsetof(TYPE,MEMBER)
