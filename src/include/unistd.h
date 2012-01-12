@@ -1,10 +1,10 @@
 /**
- * \file unistd.h
- * \brief Defines miscellaneous constants, types and functions.
- * \details It is defined by the POSIX.1 standard.
- * \author Paulo Urio
- * \date 2012
- * \copyright FreeBSD License
+ * @file unistd.h
+ * @brief Defines miscellaneous constants, types and functions.
+ * @details It is defined by the POSIX.1 standard.
+ * @author Paulo Urio
+ * @date 2012
+ * @copyright FreeBSD License
  *
  * Header file for POSIX conformance, it is part of POSIX.1.  Inclusion of
  * unistd.h reserves no namespaces. However, the inclusion of any POSIX header
@@ -102,6 +102,6 @@
 /* The implementation supports the thread-safe functions option */
 //#define _POSIX_THREAD_SAFE_FUNCTIONS
 
-/** \todo Missing sysconf constants. */
+/** @todo Missing sysconf constants. */
 
 #endif /* _UNISTD_H_ */

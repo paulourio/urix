@@ -1,12 +1,12 @@
 /**
- * \file fcntl.h
- * \brief File control options (POSIX 1003.4 synchronized I/O).
- * \details Define the requests and arguments for use by the
+ * @file fcntl.h
+ * @brief File control options (POSIX 1003.4 synchronized I/O).
+ * @details Define the requests and arguments for use by the
  * 	functions fcntl() and open().  Reserved namespaces: beginning with
  * 	l_, F_, O_, and S_.
- * \author Paulo Urio
- * \date 2012
- * \copyright FreeBSD License
+ * @author Paulo Urio
+ * @date 2012
+ * @copyright FreeBSD License
  */
 
 #ifndef _FCNTL_H_
@@ -37,7 +37,7 @@
  * Used by fcntl().  POSIX Table 6-2.*/
 #define FD_CLOEXEC	1
 
-/** \subpage fcntl Values for l_type
+/** @subpage fcntl Values for l_type
  * Used for record locking with fcntl() (the following
  * values are unique) are as follows.  POSIX Table 6-3. */
 /** Shared or read lock
@@ -49,7 +49,7 @@
 #define F_WRLCK		3
 /** @} */
 
-/** \subpage fcntl File creation
+/** @subpage fcntl File creation
  * File creation flags and are used in the oflag value to open(). They shall
  * be bitwise-distinct.
  * @{ */
@@ -63,7 +63,7 @@
 #define O_TRUNC		01000
 /** @} */
 
-/** \subpage fcntl File status
+/** @subpage fcntl File status
  * Flags used for open() and fcntl() are as follows.
  * @{ */
 /** Set append mode */

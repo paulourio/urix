@@ -1,6 +1,6 @@
 /**
- * \file ansi.h
- * \brief Check whether the compiler supports Standard C.
+ * @file ansi.h
+ * @brief Check whether the compiler supports Standard C.
  *
  * If compiler is in conformance with Standard C and define to
  * use POSIX.1b 1993.
@@ -9,9 +9,9 @@
  * some programs use _VOID, _CONST in order to be portable with ANSI C and
  * K&R compilers.
  *
- * \author Paulo Urio
- * \date 2012
- * \copyright FreeBSD License
+ * @author Paulo Urio
+ * @date 2012
+ * @copyright FreeBSD License
  */
 
 #ifndef _URIX_ANSI_H_

@@ -1,9 +1,9 @@
 /**
- * \file limits.h
- * \brief Defines some values for a few URIX constants.
- * \author Paulo Urio
- * \date 2012
- * \copyright FreeBSD License
+ * @file limits.h
+ * @brief Defines some values for a few URIX constants.
+ * @author Paulo Urio
+ * @date 2012
+ * @copyright FreeBSD License
  *
  * This header reserves symbol namespaces ending with _MAX.
  * Minimum values for the maximum are distinguished by the prefix _POSIX_
@@ -12,7 +12,7 @@
 #ifndef _URIX_LIMITS_H_
 #define _URIX_LIMITS_H_
 
-/** \subpage ActualLimits limits.h: Actual limits
+/** @subpage ActualLimits limits.h: Actual limits
  *  Copied from linux/kernel.h
  * @{ */
 
@@ -111,7 +111,7 @@
 /* These are only visible for POSIX */
 #if defined(_POSIX_C_SOURCE) || defined(_POSIX_SOURCE)
 
-/** \subpage PosixLimits POSIX Minimum limits
+/** @subpage PosixLimits POSIX Minimum limits
  *  Table 2-5: POSIX Feature Limits: Minimum Requirements
  *  @{
  */
@@ -185,7 +185,7 @@
 #define _POSIX_CLOCKRES_MIN	20000000
 #endif /* POSIX.4 */
 
-/* Required for _POSIX_ASYNCHRONOUS_IO */
+/** Required for _POSIX_ASYNCHRONOUS_IO */
 
 /** The maximum number of AIOs you can specify in a single listio call (the
  * maximum length of the vector, NOPs not included). */

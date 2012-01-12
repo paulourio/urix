@@ -1,9 +1,9 @@
 /**
- * \file stddef.h
- * \brief Standard type definitions.
- * \author Paulo Urio
- * \date 2012
- * \copyright FreeBSD License
+ * @file stddef.h
+ * @brief Standard type definitions.
+ * @author Paulo Urio
+ * @date 2012
+ * @copyright FreeBSD License
  */
 
 #ifndef _STDDEF_H_

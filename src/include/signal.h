@@ -1,9 +1,9 @@
 /**
- * \file signal.h
- * \brief Defines all the ANSI and POSIX signals.
- * \author Paulo Urio
- * \date 2012
- * \copyright FreeBSD License
+ * @file signal.h
+ * @brief Defines all the ANSI and POSIX signals.
+ * @author Paulo Urio
+ * @date 2012
+ * @copyright FreeBSD License
  *
  *  The default actions are as follows:
  *  - T: Abnormal termination of the process. The process is terminated with
@@ -94,6 +94,6 @@ typedef void (*__sighandler_t)(int);
 #define SIG_HOLD   ((__sighandler_t)  2)
 //#define SIG_CATCH  ((__sighandler_t)  3)
 
-/** \todo Add more posix definitions */
+/** @todo Add more posix definitions */
 
 #endif /* _SIGNAL_H_ */

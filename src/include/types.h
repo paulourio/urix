@@ -1,7 +1,9 @@
-/*
- * types.h
- *
- *  Created on: 12/01/2012
+/**
+ * @file types.h
+ * @brief Defines some POSIX data types.
+ * @author Paulo Urio
+ * @date 2012
+ * @copyright FreeBSD License
  */
 
 #ifndef _TYPES_H_
@@ -16,7 +18,7 @@ typedef signed char     i8_t;
 /** 16 bit signed type */
 typedef short          i16_t;
 
-/** \warning Not being check whether long long is supported by compiler. */
+/** @warning Not being check whether long long is supported by compiler. */
 typedef unsigned long long u64_t;
 
 #endif /* _TYPES_H_ */
