@@ -1,15 +1,15 @@
 /**
- * \file errno.h
- * \brief Defines the various errors specified in POSIX.1.
- * \details These constants are also visible to user programs.  Internally
+ * @file errno.h
+ * @brief Defines the various errors specified in POSIX.1.
+ * @details These constants are also visible to user programs.  Internally
  * the errors are returned as function result.  Some functions
  * returns zero or positive values when are succeed.  Therefore, in kernel mode,
  * the errors should be small negative integers, and in user mode the errors
  * should be small positive integers.  The description of each error was
  * collected from pubs.opengroup.org.
- * \author Paulo Urio
- * \date 2012
- * \copyright FreeBSD License
+ * @author Paulo Urio
+ * @date 2012
+ * @copyright FreeBSD License
  */
 
 #ifndef _ERRNO_H_
