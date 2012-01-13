@@ -1,6 +1,5 @@
 /**
  * @file limits.h
- * @page limits
  * @brief Defines some values for a few URIX constants.
  * @author Paulo Urio
  * @date 2012
@@ -13,10 +12,8 @@
 #ifndef _URIX_LIMITS_H_
 #define _URIX_LIMITS_H_
 
-/** @subpage limits limits.h: Actual limits
- *  Copied from linux/kernel.h
- * @{ */
-
+/** @{ */
+/* Actual limits - Copied from linux/kernel.h */
 /** Unsigned short maximum value */
 #define USHRT_MAX	((u16)(~0U))
 /** Short maximum value */
@@ -112,11 +109,8 @@
 /* These are only visible for POSIX */
 #if defined(_POSIX_C_SOURCE) || defined(_POSIX_SOURCE)
 
-/** @subpage limits POSIX Minimum limits
- *  Table 2-5: POSIX Feature Limits: Minimum Requirements
- *  @{
- */
-
+/** @{ */
+/* Table 2-5: POSIX Feature Limits: Minimum Requirements */
 /** Number of operations in one listio */
 #define _POSIXAIOLISTIO_MAX	2
 /** Number of simultaneous asynchronous I/Os */

@@ -1,18 +1,18 @@
 /**
  * @file unistd.h
- * @page unistd
  * @brief Defines miscellaneous constants, types and functions.
  * @details It is defined by the POSIX.1 standard.
- * @author Paulo Urio
- * @date 2012
- * @copyright FreeBSD License
- *
  * Header file for POSIX conformance, it is part of POSIX.1.  Inclusion of
  * unistd.h reserves no namespaces. However, the inclusion of any POSIX header
  * reserves the space of all names beginning with "_" (underscore).
  * It also defines the optional components that comprise a POSIX system. By
  * examining constants found in unistd.h (starting by _POSIX_), you can
  * determine which options are or are not available on the system.
+ * @author Paulo Urio
+ * @date 2012
+ * @copyright FreeBSD License
+ *
+
  */
 
 #ifndef _UNISTD_H_
@@ -22,28 +22,28 @@
  * Also, it says it must be defined on stddef.h.
  */
 
-/** @subpage unistd Values used by access
- * POSIX Table 2-8. @{ */
+/** @{ */
+/* Values used by access POSIX Table 2-8. */
 #define F_OK		0 /**< File existence */
 #define X_OK		1 /**< Execute permission */
 #define W_OK		2 /**< Write permission */
 #define R_OK		4 /**< Read permission */
 /** @} */
 
-/** @subpage unistd The constants used for lseek()
- * @{ */
-#define SEEK_SET 0 /**< Set the seek pointer to the given offset */
-#define SEEK_CUR 1 /**< Set the seek pointer to the current + given offset */
-#define SEEK_END 2 /**< Set the seek pointer to EOF plus the given offset */
+/** @{ */
+/* The constants used for lseek() */
+#define SEEK_SET 	0 /**< Set the seek pointer to the given offset */
+#define SEEK_CUR 	1 /**< Set the seek ptr the current + given offset */
+#define SEEK_END 	2 /**< Set the seek ptr to EOF plus the given offset */
 /** @} */
 
+
 #ifdef _POSIX_C_SOURCE
-/** Tells which POSIX version is supported */
-#define _POSIX_VERSION 199309L
+#define _POSIX_VERSION 199309L	/**< Tells which POSIX version is supported */
 #endif /* _POSIX_C_SOURCE */
 
-/** @subpage unistd Standard flux
- * @{
+/** @{ */
+/* Standard streams
  * These three definitions are required by POSIX Sec. 8.2.1.2. */
 #define STDIN_FILENO	0 /**< File descriptor for standard input, stdin */
 #define STDOUT_FILENO	1 /**< File descriptor for standard output, stdout */
@@ -78,7 +78,7 @@
 #define _POSIX_CHOWN_RESTRICTED
 /** File names longer than NAME_MAX will not be silently truncated; rather,
  * an error will be returned.
- * \todo Missing it.
+ * @todo Missing it.
  */
 #define _POSIX_NO_TRUNC
 /** Disabling of terminal special characters defined in termios.h is supported

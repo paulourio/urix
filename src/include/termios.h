@@ -1,6 +1,5 @@
 /**
  * @file termios.h
- * @page termios
  * @brief Header contains the definitions used by the terminal I/O interfaces
  * @author Paulo Urio
  * @date 2012
@@ -10,15 +9,11 @@
 #ifndef _TERMIOS_H_
 #define _TERMIOS_H_
 
-/** Used for terminal special characters */
-typedef unsigned char	cc_t;
-/** Used for terminal baud rates */
-typedef unsigned int	speed_t;
-/** Used for terminal modes */
-typedef unsigned int	tcflag_t;
+typedef unsigned char	cc_t;		/**< Used for terminal special chars */
+typedef unsigned int	speed_t;	/**< Used for terminal baud rates */
+typedef unsigned int	tcflag_t;	/**< Used for terminal modes */
 
-/** Size of the array c_cc for control characters */
-#define NCCS 19
+#define NCCS 19	/**< Size of the array c_cc for control characters */
 
 /** Primary terminal control structure. POSIX Table 7-1. */
 struct termios {
@@ -30,9 +25,8 @@ struct termios {
 	cc_t c_cc[NCCS];	/**< Control characters */
 };
 
-/** @subpage termios
- * @{
- *  Indices into c_cc array.  Default values in parentheses. POSIX Table 7-5. */
+/** @{ */
+/* Indices into c_cc array.  Default values in parentheses. POSIX Table 7-5. */
 #define VEOF		0	/**< cc_c[VEOF] = EOF character (^D) */
 #define VEOL		1	/**< cc_c[VEOL] = EOL character (undef) */
 #define VERASE		2	/**< cc_c[VERASE] = ERASE character (^H) */
@@ -46,8 +40,8 @@ struct termios {
 #define VSTOP		10	/**< cc_c[VSTOP] = STOP character (^Q) */
 /** @} */
 
-/** @subpage termios Input modes
- * @{
+/** @{ */
+/* Input Modes
  * Values for termios c_iflag bit map.  POSIX Table 7-2. */
 #define BRKINT		0x0001	/**< Signal interrupt on break */
 #define ICRNL		0x0002	/**< Map CR to NL on input */
@@ -62,8 +56,8 @@ struct termios {
 #define PARMRK		0x0400	/**< Mark parity errors in the input queue */
 /** @} */
 
-/** @subpage termios Output modes
- * @{
+/** @{ */
+/* Output Modes
  * The c_oflag field specifies the system treatment of output. */
 #define OPOST	00001	/**< Post-process output */
 #define OLCUC	00002	/**< Map lower-case to upper-case on output (LEGACY) */
@@ -96,8 +90,8 @@ struct termios {
 #	define FF1	100000	/**< Form-feed delay type 1 */
 /** @} */
 
-/** @subpage termios Baud Rate Selection
- * @{
+/** @{ */
+/* Baud Rate Selection
  * Values for the baud rate settings.  POSIX Table 7-6. */
 #define B0		0x0000	/**< Hang up the line */
 #define B50		0x1000	/**< 50 baud */
@@ -117,12 +111,10 @@ struct termios {
 #define B38400		0xF000	/**< 38400 baud */
 /** @} */
 
-
-/** @subpage termios Control Modes
- * @{
+/** @{ */
+/* Control Modes
  * The c_cflag field describes the hardware control of the terminal; not all
- * values specified are required to be supported by the underlying hardware:
- */
+ * values specified are required to be supported by the underlying hardware: */
 #define CSIZE	0x0060	/**< Number of bits per character. Character size */
 #	define CS5	00000	/**< Character size 5 bits */
 #	define CS6	00020	/**< Character size 6 bits */
@@ -136,11 +128,10 @@ struct termios {
 #define CLOCAL	0004000	/**< Ignore modem status lines */
 /** @} */
 
-/** @subpage termios  Local Modes
- * @{
+/** @{ */
+/* Local Modes
  * The c_lflag field of the argument structure is used to control various
- * terminal functions:
- */
+ * terminal functions: */
 #define ECHO 	0x0001 /**< Enable echo */
 #define ECHOE 	0x0002 /**< Echo erase character as error-correcting backspace */
 #define ECHOK 	0x0004 /**< Echo KILL */
@@ -153,8 +144,8 @@ struct termios {
 #define XCASE 	0X0200 /**< Canonical upper/lower presentation (LEGACY) */
 /** @} */
 
-/** @subpage termios  Attribute Selection
- * @{
+/** @{ */
+/* Attribute Selection
  * The following symbolic constants for use with tcsetattr() are defined:
  */
 #define TCSANOW 	0x0001 /**< Change attributes immediately */
@@ -163,21 +154,19 @@ struct termios {
 				 *  also flush pending input. */
 /** @} */
 
-/** @subpage termios  Line Control
- * @{
+/** @{ */
+/* Line Control
  * The following symbolic constants for use with tcflush() are defined:
  */
 #define TCIFLUSH 0 /**< Flush pending input. Flush untransmitted output */
 #define TCOFLUSH 4 /**< Flush untransmitted output */
 #define TCIOFLUSH 2 /**< Flush both pending input and untransmitted output */
-
 /* The following symbolic constants for use with tcflow() are defined: */
 #define TCOOFF 	0 /**< Suspend output */
 #define TCOON 	1 /**< Restart output */
 #define TCIOFF 	2 /**< Transmit a STOP character, to suspend input data. */
 #define TCION 	3 /**< Transmit a START character, to restart input data. */
 /** @} */
-
 
 /** @todo Prototypes */
 

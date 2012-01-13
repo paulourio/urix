@@ -1,6 +1,5 @@
 /**
  * @file fcntl.h
- * @page fcntl
  * @brief File control options (POSIX 1003.4 synchronized I/O).
  * @details Define the requests and arguments for use by the
  * 	functions fcntl() and open().  Reserved namespaces: beginning with
@@ -30,30 +29,26 @@
  * Used by fcntl().  POSIX Table 6-2.*/
 #define FD_CLOEXEC	1
 
-/** @subpage fcntl Values for l_type
- * Used for record locking with fcntl() (the following
- * values are unique) are as follows.  POSIX Table 6-3.
- * @{ */
-
+/** @{ */
+/* Used for record locking with fcntl() (the following
+ * values are unique) are as follows.  POSIX Table 6-3. */
 #define F_RDLCK		1 /**< Shared or read lock */
 #define F_UNLCK		2 /**< Unlock */
 #define F_WRLCK		3 /**< Exclusive or write lock */
 /** @} */
 
-/** @subpage fcntl File creation
- * File creation flags and are used in the oflag value to open(). They shall
- * be bitwise-distinct.
- * @{ */
-
+/** @{ */
+/* File creation flags and are used in the oflag value to open(). They shall
+ * be bitwise-distinct. */
 #define O_CREAT		00100 /**< Create file if it does not exist */
 #define O_EXCL		00200 /**< Exclusive use flag */
 #define O_NOCTTY	00400 /**< Do not assign controlling terminal */
 #define O_TRUNC		01000 /**< Truncate flag */
 /** @} */
 
-/** @subpage fcntl File status
- * Flags used for open() and fcntl() are as follows.
- * @{ */
+/** @{ */
+/* File status
+ * Flags used for open() and fcntl() are as follows. */
 /** Set append mode */
 #define O_APPEND	02000
 /** Write according to synchronized I/O data integrity completion */
