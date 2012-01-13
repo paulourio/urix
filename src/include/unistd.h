@@ -1,5 +1,6 @@
 /**
  * @file unistd.h
+ * @page unistd
  * @brief Defines miscellaneous constants, types and functions.
  * @details It is defined by the POSIX.1 standard.
  * @author Paulo Urio
@@ -21,36 +22,33 @@
  * Also, it says it must be defined on stddef.h.
  */
 
-/* Values used by access().  POSIX Table 2-8. */
-/** File existence */
-#define F_OK		0
-/** Execute permission */
-#define X_OK		1
-/** Write permission */
-#define W_OK		2
-/** Read permission */
-#define R_OK		4
+/** @subpage unistd Values used by access
+ * POSIX Table 2-8. @{ */
+#define F_OK		0 /**< File existence */
+#define X_OK		1 /**< Execute permission */
+#define W_OK		2 /**< Write permission */
+#define R_OK		4 /**< Read permission */
+/** @} */
 
-/* The constants used for lseek(). */
-/** Set the seek pointer to the given offset */
-#define SEEK_SET	0
-/** Set the seek pointer to the current plus the given offset */
-#define SEEK_CUR	1
-/** Set the seek pointer to EOF plus the given offset */
-#define SEEK_END	2
+/** @subpage unistd The constants used for lseek()
+ * @{ */
+#define SEEK_SET 0 /**< Set the seek pointer to the given offset */
+#define SEEK_CUR 1 /**< Set the seek pointer to the current + given offset */
+#define SEEK_END 2 /**< Set the seek pointer to EOF plus the given offset */
+/** @} */
 
 #ifdef _POSIX_C_SOURCE
 /** Tells which POSIX version is supported */
 #define _POSIX_VERSION 199309L
 #endif /* _POSIX_C_SOURCE */
 
-/* These three definitions are required by POSIX Sec. 8.2.1.2. */
-/** File descriptor for standard input, stdin */
-#define STDIN_FILENO	0
-/** File descriptor for standard output, stdout */
-#define STDOUT_FILENO	1
-/** File descriptor for standard error, stderr */
-#define STDERR_FILENO	2
+/** @subpage unistd Standard flux
+ * @{
+ * These three definitions are required by POSIX Sec. 8.2.1.2. */
+#define STDIN_FILENO	0 /**< File descriptor for standard input, stdin */
+#define STDOUT_FILENO	1 /**< File descriptor for standard output, stdout */
+#define STDERR_FILENO	2 /**< File descriptor for standard error, stderr */
+/** @} */
 
 /* POSIX defines several options that may be implemented or not.  We will just
  * uncomment those we support. */
