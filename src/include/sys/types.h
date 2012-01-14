@@ -28,14 +28,6 @@ typedef unsigned long long u64_t;	/**< Unsigned 64 bits type */
 
 #ifdef __KERNEL__
 
-/** @{ */
-/* File system */
-typedef u32_t blkcnt_t;		/**< Used for file block counts */
-typedef u64_t blksize_t;		/**< Used for block sizes */
-typedef u64_t fsblkcnt_t;	/**< Used for file system block counts */
-typedef u64_t fsfilcnt_t;	/**< Used for file system file counts */
-/** @} */
-
 typedef u64_t clock_t;  /**< System times in clock ticks or CLOCKS_PER_SEC */
 typedef s32_t clockid_t; /**< Used for clock ID type in the clock and timer functions */
 typedef u32_t dev_t;	/**< Used for device IDs */
@@ -58,7 +50,6 @@ typedef u32_t size_t;	/**< Used for sizes of objects */
 typedef s32_t ssize_t;	/**< Used for a count of bytes or an error indication */
 #endif
 
-
 #ifndef _TIME_T
 #define _TIME_T
 typedef s64_t time_t;	/**< Time in seconds since 1 Jan 1970 0000 GMT */
@@ -67,6 +58,14 @@ typedef s64_t time_t;	/**< Time in seconds since 1 Jan 1970 0000 GMT */
 typedef u16_t uid_t;		/**< Used for user IDs */
 
 typedef s64_t useconds_t;	/**< Used for time in microseconds */
+
+/** @{ */
+/* File system */
+typedef u32_t blkcnt_t;		/**< Used for file block counts */
+typedef u64_t blksize_t;		/**< Used for block sizes */
+typedef u64_t fsblkcnt_t;	/**< Used for file system block counts */
+typedef u64_t fsfilcnt_t;	/**< Used for file system file counts */
+/** @} */
 
 #endif /* __KERNEL__ */
 
