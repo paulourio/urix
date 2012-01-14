@@ -1,6 +1,5 @@
 /**
  * @file wait.h
- * @page syswait
  * @brief Declarations for waiting.
  * @author Paulo Urio
  * @date 2012
@@ -18,8 +17,8 @@
  * </table>
  */
 
-#ifndef _WAIT_H_
-#define _WAIT_H_
+#ifndef _SYS_WAIT_H_
+#define _SYS_WAIT_H_
 
 /** @{ */
 /* For use with waitpid() */
@@ -52,4 +51,4 @@
 
 /** @todo sys/wait prototypes: wait, waitid and waitpid. */
 
-#endif /* _WAIT_H_ */
+#endif /* _SYS_WAIT_H_ */

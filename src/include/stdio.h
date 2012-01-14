@@ -11,7 +11,7 @@
 
 #include <stddef.h>
 
-#define	BUFSIZ		4096	/** Size of stdio.h buffers */
+#define	BUFSIZ		4096	/**< Size of stdio.h buffers */
 #define	EOF		(-1)	/**< End-of-file return value */
 
 /** Maximum size in bytes of the longest filename string that the
@@ -58,19 +58,22 @@
 /** @} */
 
 /** A structure containing information about a file */
-typedef struct __iobuf {
+typedef struct __iobuf { /** @{ */
 	int		_count;
 	int		_fd;
 	int		_flags;
 	int		_bufsiz;
 	unsigned char	*_buf;
 	unsigned char	*_ptr;
+	/** @} */
 } FILE;
 
 /** Type containing all information needed to specify uniquely every position
  * within a file */
 typedef long int	fpos_t;
 
+/** @{ */
 extern FILE __stdin, __stdout, __stderr;
+/** @} */
 
 #endif /* _STDIO_H_ */

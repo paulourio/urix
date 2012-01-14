@@ -30,14 +30,14 @@ typedef struct {
 
 /** Structure type returned by the ldiv() function */
 typedef struct {
-	long quot;	/**< Quotient value */
-	long rem; 	/**< Remainder value */
+	long int quot;	/**< Quotient value */
+	long int rem; 	/**< Remainder value */
 } ldiv_t;
 
 /** Structure type returned by the lldiv() function */
 typedef struct {
-	long long quot;	/**< Quotient value */
-	long long rem; 	/**< Remainder value */
+	long long int quot;	/**< Quotient value */
+	long long int rem; 	/**< Remainder value */
 } lldiv_t;
 
 /** @todo Prototypes */
