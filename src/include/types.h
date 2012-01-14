@@ -1,5 +1,5 @@
 /**
- * @file types.h
+ * @file
  * @brief Defines some POSIX data types.
  * @author Paulo Urio
  * @date 2012

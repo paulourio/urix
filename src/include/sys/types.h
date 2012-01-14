@@ -1,5 +1,5 @@
 /**
- * @file sys/types.h
+ * @file
  * @brief Data types.
  * @author Paulo Urio
  * @date 2012
@@ -22,19 +22,19 @@ typedef unsigned int u32_t;		/**< Unsigned 32 bits type */
 typedef signed long s64_t;		/**< Signed 64 bits type */
 typedef unsigned long u64_t;		/**< Unsigned 64 bits type */
 #else
-typedef signed long long s64_t;	/**< Signed 64 bits type */
+typedef signed long long s64_t;		/**< Signed 64 bits type */
 typedef unsigned long long u64_t;	/**< Unsigned 64 bits type */
 #endif
 
 #ifdef __KERNEL__
 
 typedef u64_t clock_t;  /**< System times in clock ticks or CLOCKS_PER_SEC */
-typedef s32_t clockid_t; /**< Used for clock ID type in the clock and timer functions */
+typedef s32_t clockid_t; /**< Clock ID type in the clock and timer functions */
 typedef u32_t dev_t;	/**< Used for device IDs */
 typedef u32_t gid_t;	/**< Used for group IDs */
-typedef s64_t id_t;	/**< [XSI]  Used as a general identifier; can be used to contain at least a pid_t, uid_t, or gid_t */
+typedef s64_t id_t;	/**< Used as a general identifier */
 typedef u64_t ino_t;	/**< Used for file serial numbers */
-typedef s32_t key_t;	/**< [XSI]  Used for XSI interprocess communication */
+typedef s32_t key_t;	/**< Used for XSI interprocess communication */
 typedef u16_t mode_t;	/**< Used for some file attributes */
 typedef u16_t nlink_t;	/**< Used for link counts */
 typedef s64_t off_t;	/**< Used for file sizes */
@@ -55,14 +55,14 @@ typedef s32_t ssize_t;	/**< Used for a count of bytes or an error indication */
 typedef s64_t time_t;	/**< Time in seconds since 1 Jan 1970 0000 GMT */
 #endif
 
-typedef u16_t uid_t;		/**< Used for user IDs */
+typedef u16_t uid_t;	/**< Used for user IDs */
 
 typedef s64_t useconds_t;	/**< Used for time in microseconds */
 
 /** @{ */
 /* File system */
 typedef u32_t blkcnt_t;		/**< Used for file block counts */
-typedef u64_t blksize_t;		/**< Used for block sizes */
+typedef u64_t blksize_t;	/**< Used for block sizes */
 typedef u64_t fsblkcnt_t;	/**< Used for file system block counts */
 typedef u64_t fsfilcnt_t;	/**< Used for file system file counts */
 /** @} */
